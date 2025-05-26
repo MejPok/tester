@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+
+<h1> to do list</h1>
+
+<form method="post">
+    <input type="text" name="newTask" placeholder="Enter a new task" />
+    <button type="submit">Add Task</button>
+</form>
+
+<ul>
+    @foreach(var item in Model.itemList)
+    {
+        <li>
+            @item
+        </li>
+    }
+</ul>
